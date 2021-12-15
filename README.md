@@ -11,6 +11,8 @@ As an important note, personal information must always be kept off-chain.
 A DID is "a new type of identifier" that enables verifiable and decentralized digital identity. A DID identify any subject (e.g., a person, organization, thing, data model, abstract entity, etc.) that the controller of the DID decides it identifies. 
 A DID is a URI that associates a DID subject with a DID document allowing trustable interactions associated with that subject, as it contains information about the authentication methods to prove ownership of that DID, endpoints, and other attributes.
 
+The manual for the deployment of the component developed for this layer can be downloaded here [DID Manual](./Manual%20Identidad%20-%20DID%20English.pdf)
+
 ### 1.1 Universal Resolver
 
 Each DID is associated with a document in JSON format that contains all the public keys, verification methods and services. 
@@ -31,6 +33,8 @@ A verifiable credential is a digital file that contains one or more key-value cl
 
 We are building and maintaining a public library of VCs that is aimed to incorporate VCs designed for and used in real use cases across Latin America and the Caribbean in areas such as education, health, energy, public administration services, and land registry, among others. This library is in the domain https://www.lacchain.net/credentials/library/{type}/{hash}/{version} and the VCs are also stored in the LACChain Github  and in the LACChain IPFS nodes.
 Verifiable Presentations also need to be verifiable because the recipient must be able to assume that a legitimate credential holder is consenting to share that presentation with them. The mechanism is exactly the same as for Verifiable Credentials, i.e. a "proof" attribute in the VerifiablePresentation object.
+
+The manual for the deployment of the component developed for this layer can be downloaded here [VC Manual](./Manual%20Identidad%20-%20VC%20English.pdf)
 
 ### 2.1 Schemas Repository  
 
@@ -64,6 +68,8 @@ At LACChain we have developed an ad-hoc solution for the exchange of Verifiable 
 
 The [LACChain Mailbox](https://github.com/lacchain/id-mailbox) is a secure and private system for the exchange of messages, VCs, and VPs. It is a controlled by a centralized service that allows entities identified using DIDs to send and receive messages that are stored encrypted in a secure database.
 
+The manual for the deployment of the component developed for this layer can be downloaded here [Mailbox Manual](./Manual%20Identidad%20-%20Mailbox%20English.pdf)
+
 ## 3. Authentication Protocols
 
 In order to access a digital service, we use an authentication method based on OpenID Connect proposed by KayTrust called [DIDConnect](https://developer.kaytrust.id/Specs/DIDConnect/). 
@@ -78,6 +84,7 @@ This last point is where it is necessary to define a Root-of-Trust mechanism tha
 There are currently different centralized solutions to solve this problem, such as: Trusted List (TL) and Public Key Directories (PKD). 
 LACChain has defined a form of [Decentralized Root-of-Trust](https://github.com/lacchain/lacchain-pkd), making use of the same concepts but through Smart Contracts, with which TLs and PKDs can be deployed, and associated with the verification process of a VC.
 
+The manual for the deployment of the component developed for this layer can be downloaded here [VC Manual](./Manual%20Identidad%20-%20PKD%20English.pdf)
 
 ## License
 
